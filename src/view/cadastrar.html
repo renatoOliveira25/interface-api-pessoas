@@ -45,43 +45,44 @@
         <h1>CADASTRO PESSOA</h1>
         <form method="post">
             <div class="form-floating mb-3">
-                <input type="name" class="form-control" id="floatingInput" name="nome-pessoa" placeholder="Nome completo" required>
+                <input type="name" class="form-control" name="nome-pessoa" placeholder="Nome completo" required>
                 <label for="floatingInput">Nome completo</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="number" class="form-control" id="floatingInput" name="cpf" placeholder="CPF" required>
+                <input type="number" class="form-control" name="cpf" placeholder="CPF" required>
                 <label for="floatingInput">CPF</label>
             </div>
             <div class="double-input">
                 <div class="form-floating mb-3 compact">
-                    <input type="date" class="form-control" id="floatingInput" name="data-de-nascimento" placeholder="Data de nascimento" required>
+                    <input type="date" class="form-control" name="data-de-nascimento" placeholder="Data de nascimento" required>
                     <label for="floatingInput">Data de Nascimento</label>
                 </div>
                 <div class="form-floating mb-3 compact">
-                    <input type="number" class="form-control" id="floatingInput" name="telefone" placeholder="Telefone" required>
+                    <input type="number" class="form-control" name="telefone" placeholder="Telefone" required>
                     <label for="floatingInput">Telefone</label>
                 </div>
             </div>
             <div class="form-floating mb-3">
-                <input type="name" class="form-control" id="floatingInput" name="endereco" placeholder="Endereço" required>
+                <input type="name" class="form-control" name="endereco" placeholder="Endereço" required>
                 <label for="floatingInput">Endereço</label>
             </div>
             <div class="double-input">
                 <div class="form-floating mb-3 compact">
-                    <input type="number" class="form-control" id="floatingInput" name="altura" placeholder="Peso" required>
+                    <input type="number" class="form-control" name="altura" placeholder="Peso" required>
                     <label for="floatingInput">Altura (cm)</label>
                 </div>
                 <div class="form-floating mb-3 compact">
-                    <input type="number" class="form-control" id="floatingInput" name="peso" placeholder="Altura">
+                    <input type="number" class="form-control" name="peso" placeholder="Altura">
                     <label for="floatingInput">Peso (kg)</label>
                 </div>
             </div>
         </form>
-        <input class="btn btn-primary" type="submit" value="Cadastrar">
+        <input class="btn btn-primary" type="submit" value="Cadastrar" onclick="cadastrar()">
 
     </div>
 
     <script src="js/requests.js"></script>
+    
 </body>
 
 </html>

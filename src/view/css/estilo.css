@@ -57,11 +57,11 @@ body {
     align-items: center;
 }
 
-#loatingInput {
+.form-control {
     background-color: gray!important;
 }
 
-#floatingInput {
+.form-control {
     background-color: #d9d9d9!important;
     color: #606060!important;
 }

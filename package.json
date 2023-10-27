@@ -1,0 +1,22 @@
+{
+  "name": "interface-api-pessoas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renatoOliveira25/interface-api-pessoas.git"
+  },
+  "author": "Renato Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/renatoOliveira25/interface-api-pessoas/issues"
+  },
+  "homepage": "https://github.com/renatoOliveira25/interface-api-pessoas#readme",
+  "dependencies": {
+    "axios": "^1.5.1"
+  }
+}

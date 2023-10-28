@@ -8,4 +8,6 @@ function recuperaDados() {
     const peso = document.querySelector('[name="peso"]').value;
 }
 
-console.log('oi');
+function recuperarPessoas(lista) {
+    console.log(lista);
+}

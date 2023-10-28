@@ -12,7 +12,7 @@ body {
 }
 
 .esq-logotipo {
-    width: 35%;
+    width: 25%;
     height: 100vh;
 
     display: flex;
@@ -30,7 +30,7 @@ body {
 }
 
 .dir-inputs {
-    width: 65%;
+    width: 75%;
     height: 100vh;
 
     display: flex;
@@ -76,10 +76,11 @@ label::after {
 }
 
 /*
-* Botão Cadastrar
+* Botões de Ação
 */
 .btn-primary {
     background-color: #1F1048!important;
+    color: #EAEAEA;
     width: 85%;
     height: 4em;
     border-radius: 5px!important;

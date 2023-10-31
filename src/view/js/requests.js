@@ -16,6 +16,7 @@ function cadastrar() {
     peso: document.querySelector('[name="peso"]').value
   }
 
+  // Faz requisição ao servidor, enviando os dados para cadastro
   fetch(`${url}/user`, {
     method: 'POST',
     headers: {
@@ -201,27 +202,31 @@ function listar() {
 function editarPessoa(pessoa) {
   console.log(pessoa);
 
+  // Encapsula e serializa objeto pessoa para enviar para outra página
   const objetoPessoaSerializado = JSON.stringify(pessoa);
-
   const objetoPessoaCodificado = encodeURIComponent(objetoPessoaSerializado);
 
+  // Redireciona para a página alterar.html, enviando o objeto pessoa como parâmetro
   window.location.href = `alterar.html?pessoa=${objetoPessoaCodificado}`;
 }
 
 function carregarInfo() {
+  // Recupera o objeto pessoa passado como parâmetro
   const urlParams = new URLSearchParams(window.location.search);
   const pessoaCodificada = urlParams.get('pessoa');
 
+  // Desencapsula e serializa objeto pessoa para enviar para outra página
   const pessoaSerializada = decodeURIComponent(pessoaCodificada);
-
   const pessoa = JSON.parse(pessoaSerializada);
 
+  // Faz um parse na data para podermos utilizar dia, mês e ano
   const dataParse = new Date(pessoa.data_nascimento);
 
   document.querySelector('[name="id-pessoa"]').value = pessoa.id;
   document.querySelector('[name="nome-pessoa-alt"]').value = pessoa.nome;
   document.querySelector('[name="cpf-alt"]').value = pessoa.cpf;
 
+  // Verifica se o mês for menor que 10, coloca um zero antes, caso seja maior, não coloca o zero
   if(dataParse.getMonth()+1 < 10) {
     document.querySelector('[name="data-de-nascimento-alt"]').value = `${dataParse.getFullYear()}-0${dataParse.getMonth()+1}-${dataParse.getDate()}`;
   } else {
@@ -254,7 +259,7 @@ function atualizarPessoa() {
     headers: {
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify( {dadosPessoa} ),
+    body: JSON.stringify( dadosPessoa ),
   })
     .then(response => response.json())
     .then(data => {

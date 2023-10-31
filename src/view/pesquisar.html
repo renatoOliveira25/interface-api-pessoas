@@ -45,6 +45,12 @@
         </ul>
 
         <h1>LISTAR PESSOAS</h1>
+
+        <div class="pesquisa-pessoa">
+            <input class="pesquisar-pessoa" type="text" placeholder="Digite o nome da pessoa">
+            <input class="btn-search" type="submit" value="Pesquisar" onclick="listar()">
+        </div>
+        
         <div class="div-tabela">
             <table id="tabela-pessoas">
                 <tr>
@@ -60,7 +66,7 @@
             </table>
         </div>
 
-        <input class="btn btn-primary" type="submit" value="Listar pessoas" onclick="listar()">
+        
     </div>
 
     <script src="js/tabela.js"></script>

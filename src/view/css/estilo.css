@@ -92,7 +92,7 @@ label::after {
 }
 
 h1 {
-    margin: 5%!important;
+    margin: 2.5%!important;
     text-align: center;
 
     font-weight: bold;
@@ -108,4 +108,25 @@ h2 {
     color: white;
     margin: 0 auto;
     text-align: center;
+}
+
+.pesquisa-pessoa {
+    display: flex;
+    flex-direction: row;
+
+    width: calc(100% - 1%);
+    margin: 1%;
+}
+
+.pesquisar-pessoa {
+    width: 80%;
+}
+
+.btn-search {
+    width: 10%;
+
+    background-color: #1F1048;
+    color: white;
+
+    margin-left: 5%;
 }
